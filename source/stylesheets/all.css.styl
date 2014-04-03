@@ -1,0 +1,59 @@
+@import 'nib/index'
+@import 'bootstrap/bootstrap'
+//= require normalize
+body
+  background: linear-gradient(top, #ccc, #fff)
+
+header
+  h1
+    display inline-block
+    color #348AF8
+
+section
+  @extends .row
+
+.two-thirds
+  @extends .col-sm-8
+
+.third
+  @extends .col-sm-4
+
+button
+  @extends .btn
+  @extends .btn-primary
+  background-color #42CA4D
+  border-color #3CB946
+
+nav
+  @extends .navbar
+  @extends .navbar
+  ul:first-of-type
+    @extends .nav
+    @extends .navbar-nav
+  ul:last-of-type
+    @extends .nav
+    @extends .navbar-nav
+    @extends .navbar-right
+
+.phone
+  display inline-block
+  float right
+  word-break break-word
+  word-wrap break-word
+  text-align right
+  font-size 24px
+  font-weight 500
+  min-width 270px
+  width 20%
+  margin-top 10px
+
+input
+  @extends .form-control
+
+input[type='submit']
+  @extends .btn
+  @extends .btn-primary
+
+textarea
+  @extends .form-control
+  height: 6em
