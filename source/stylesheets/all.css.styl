@@ -1,59 +1,234 @@
 @import 'nib/index'
 @import 'bootstrap/bootstrap'
 //= require normalize
+
+hypblue = #348AF8
+backgroundblue = #73AED8
+
+
 body
-  background: linear-gradient(top, #ccc, #fff)
+  /* background linear-gradient(top, #ccc, #fff) */
 
 header
+  @extends .row
   h1
+    @extends .col-sm-6
+    font-family Open Sans Condensed
     display inline-block
-    color #348AF8
+    color hypblue
+
+  .start-here
+    @extends .col-sm-3
+    button
+      @extends .btn-success
+      font-size 22px
+      margin-top 10px
+      a
+        color white
+        text-decoration none
+
+  .phone
+    @extends .col-sm-3
+    display inline-block
+    float right
+    word-break break-word
+    word-wrap break-word
+    text-align right
+    font-size 22px
+    font-weight 500
+    min-width 270px
+    width 20%
+    margin-top 10px
 
 section
   @extends .row
 
 .two-thirds
   @extends .col-sm-8
+  h2
+    font-family Merriweather Sans 
+    font-size 24px
+
 
 .third
   @extends .col-sm-4
+  h2
+    font-family Merriweather Sans
+    font-size 24px
 
-button
+.sixth
+  @extends .col-sm-2
+
+.firsthalf
+  @extends .col-sm-6
+
+.secondhalf
+  @extends .col-sm-12
+
+.whole
+  @extends .col-sm-12
+
+.stuff
+  min-height 60px
+
+.tips
+  h3
+    font-size 28px
+  img
+    width 130px
+    height auto
+    float left
+    //margin-top 24px
+    margin-right 20px
+  p
+    font-family 'Helvetica Neue', Helvetica, Arial, sans-serif
+    margin-top 40px
+    
+input[type='submit'], button
   @extends .btn
+
+input[type='submit'], button[type='submit']
   @extends .btn-primary
-  background-color #42CA4D
-  border-color #3CB946
+  margin-left 5px
+
+button.green
+  @extends .btn-success
+  font-size 24px
+  padding 12px 24px
 
 nav
-  @extends .navbar
+  width 100%
   @extends .navbar
   ul:first-of-type
     @extends .nav
     @extends .navbar-nav
+    @extends .navbar-left
   ul:last-of-type
     @extends .nav
     @extends .navbar-nav
     @extends .navbar-right
 
-.phone
-  display inline-block
-  float right
-  word-break break-word
-  word-wrap break-word
-  text-align right
+  float left
+  font-family Open Sans Condensed
   font-size 24px
-  font-weight 500
-  min-width 270px
-  width 20%
-  margin-top 10px
+  color rgb(27, 48, 159)
+
+.what-is
+  @extends .col-sm-8
+  margin-top 100px
+
+.scoop
+  @extends .col-sm-4
+  margin-top 100px
+
+.scoop-header
+  text-align center
+
+.scoop-img
+  img 
+    width: 200px
+    height: auto
+
+.scoop-signup
+  text-align left
+  display inline-block
+
+.location-img
+  margin-top 40px
+  @extends .col-sm-3
+  font-size small
+  text-align center
+  img
+    width: 280px
+    height: auto
+    padding 24 px
+
+.location
+  @extends .col-sm-5
+  margin-top 40px
+  
+.rewarding
+  @extends .col-sm-8
+  h1 
+    font-family Open Sans Condensed
+    font-size 36px
+    color #CC3300
+    position relative
+    width 45%
+    z-index 2
+  img
+    width 400px
+    height auto
+    position absolute
+    top 12%
+    left 25%
+  p.apply
+    font-family  Ubuntu Condensed
+    font-size 48px
+    width 45%
+    position absolute
+    left 90%
+    top 125%
+    z-index 2
+
+.contact
+  min-width 400px
+  margin-top 40px
+  p.text
+    h1
+      display inline-block
+      margin-right 20px
+  img
+    width 65px
+    height auto
+    margin-right 40px
+    float right
+
+.robbie-img
+  img
+    width: 200px
+    height: auto
+    //margin-top 24px
+    //margin-right 5px
+    //margin-bottom 24px
+  @extends .col-sm-3
+  font-size small
+  //text-align center
+  float left
+
+.robbie
+  @extends .col-sm-5
+
+blockquote
+  margin-top 40px
+  font-style italic
+  border none
+  padding 5px
+  margin 0
+  p 
+    &:before, &:after
+      content: '"'
+
+p.h-card
+  span
+    display block
 
 input
   @extends .form-control
 
-input[type='submit']
-  @extends .btn
-  @extends .btn-primary
-
 textarea
   @extends .form-control
-  height: 6em
+  height 6em
+
+footer
+  .disclaimers
+    border-top-left-radius 5px
+    border-top-right-radius 5px
+    background linear-gradient(top, lighten(hypblue, 80%), lighten(hypblue, 60%))
+    font-size small
+    padding 10px 20px
+
+  nav
+    font-family Open Sans Condensed
+    font-size 24px
+    color rgb(27, 48, 159)
