@@ -6,6 +6,64 @@ html
     link href="http://fonts.googleapis.com/css?family=Open+Sans Condensed:300,400|Lato:400,400|Ubuntu+Condensed:400|Merriweather+Sans:400" rel="stylesheet"
     title= current_page.data.title || "The Middleman"
     = stylesheet_link_tag "all"
-  body.container
-    = yield
+  body
+    header
+      h1 Hypnosis Training Canada
+      .start-here
+        button.green <a href="how-to-become-a-hypnotist.html">Start Here</a>
+      .phone Call now 905-634-4777 or 800-971-5774
+    main
+      nav role='navigation'
+        ul.navbar-nav
+          li
+            a href="/index.html" Home
+          li
+            a href="/how-to-become-a-hypnotist.html" Become A Hypnotist
+          li
+            a href="/learn-hypnosis.html" Upcoming Courses
+          li
+            a href="/you-and-hypnosis-training-canada.html" Inside Story
+        ul.navbar-nav.navbar-right.start-here
+          li
+            a.btn.btn-success href="/how-to-become-a-hypnotist.html" Start Here
+      = yield
+
+    footer
+      .whole
+        nav role='navigation'
+          ul.navbar-nav
+            li
+              a href="youtube.html"
+                i.fa.fa-youtube
+                |  YouTube
+            li
+              a href="facebook.html"
+                i.fa.fa-facebook
+                |  Facebook
+            li
+              a href="http://www.linkedin.com/pub/robbie-spier-miller/12/608/39"
+                i.fa.fa-linkedin
+                |  LinkedIn
+            li
+              a href="twitter.html"
+                i.fa.fa-twitter
+                |  Twitter
+          ul.navbar-nav
+            li
+              a href="/contact-hypnosis-training-canada.html" Contact Us
+            li
+              a href="/you-and-hypnosis-training-canada.html" About Us
+            li
+              a href="/site-map.html" Site Map
+            li
+              a href="/privacy-policy.html" Privacy Policy
+
+      .whole
+        div.disclaimers
+          p Copyright Hypnosis Training Canada 2014. All rights reserved.
+
+          p
+            | *THE TESTIMONIALS SHOWN ARE ONLY THE EXPERIENCE OF THE CLIENT IN THE TESTIMONIAL. RESULTS ARE NOT TYPICAL.
+
+          p Hypnosis Training Canada offers training in self-hypnosis for self-help. We are not a medical facility and do not diagnose or treat medical conditions. The service we provide is for educational purposes only. It is not therapy, and is not meant as a replacement for any other intervention.
   = javascript_include_tag  "all"
