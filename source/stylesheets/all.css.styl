@@ -1,3 +1,4 @@
+@import 'overrides'
 @import 'nib/index'
 @import 'bootstrap/bootstrap'
 //= require normalize
@@ -46,17 +47,26 @@ header
 main
   @extends .row
 
-.main_content
+.main-content
   @extends .col-sm-8
   h2
     //font-family Merriweather Sans
     font-size 24px
+  section
+    margin-top 40px
+    &:first-of-type
+      margin-top 0
 
-.side_panel
+.side-panel
   @extends .col-sm-4
+  background #f8f8f8
   h1
     //font-family Merriweather Sans
     font-size 26px
+  section
+    margin-top 40px
+    &:first-of-type
+      margin-top 0
 
 .tips
   @extends .row
@@ -74,7 +84,7 @@ input[type='submit'], button
 
 input[type='submit'], button[type='submit']
   @extends .btn-primary
-  margin-left 5px
+  //margin-left 5px
 
 button.green
   @extends .btn-success
@@ -100,24 +110,12 @@ nav
   font-size 24px
   color rgb(27, 48, 159)
 
-.what-is
-  margin-top 100px
-
 .scoop
-  margin-top 100px
-
-//.scoop-header
-//text-align center
-
-.scoop-img
   img
-    width: 200px
-    height: auto
-
-.scoop-signup
-  text-align left
-  display inline-block
-
+    height auto
+  form.form-inline
+    input
+      width 100%
 
 .location
   @extends .row
@@ -132,20 +130,6 @@ nav
     @extends .col-sm-8
     h1
       margin-top 0
-
-.rewarding
-  height: 300px
-  @extends .row
-  background url("../images/Bigstock_24060560-key.jpg") no-repeat 40% 0
-  h1
-    //font-family Open Sans Condensed
-    //font-size 36px
-    color #CC3300
-    z-index 2
-  p.apply
-    //font-family  Ubuntu Condensed
-    font-size 48px
-    z-index 2
 
 .contact
   @extends .row
@@ -172,12 +156,9 @@ form.email-form
     //margin-right 5px
     //margin-bottom 24px
   font-size small
-  //text-align center
   float left
 
 blockquote
-  margin-top 40px
-  font-style italic
   border none
   padding 5px
   margin 0
@@ -198,7 +179,6 @@ p.h-card
     content: ''
     display: block
 
-
 p.map
   @extends .text-center
   a
@@ -212,16 +192,12 @@ textarea
   @extends .form-control
   height 6em
 
-footer
-  @extends .row
-  .disclaimers
-    border-top-left-radius 5px
-    border-top-right-radius 5px
-    background linear-gradient(top, lighten(hypblue, 80%), lighten(hypblue, 60%))
-    font-size small
-    padding 10px 20px
-
-  //nav
-  //font-family Open Sans Condensed
-  //font-size 24px
-  //color rgb(27, 48, 159)
+body > footer
+    @extends .row
+    margin-top 30px
+    .disclaimers
+      border-top-left-radius 5px
+      border-top-right-radius 5px
+      background linear-gradient(top, lighten(hypblue, 80%), lighten(hypblue, 60%))
+      font-size small
+      padding 10px 20px
