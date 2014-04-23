@@ -9,8 +9,6 @@ html
   body
     header
       h1 Hypnosis Training Canada
-      .start-here
-        button.green <a href="how-to-become-a-hypnotist.html">Start Here</a>
       .phone Call now 905-634-4777 or 800-971-5774
     main
       nav role='navigation'
@@ -23,9 +21,9 @@ html
             a href="/learn-hypnosis.html" Upcoming Courses
           li
             a href="/you-and-hypnosis-training-canada.html" Inside Story
-        ul.navbar-nav.navbar-right.start-here
-          li
-            a.btn.btn-success href="/how-to-become-a-hypnotist.html" Start Here
+        ul.navbar-nav
+          li.start-here
+            a href="/how-to-become-a-hypnotist.html" Start Here
       = yield
 
     footer

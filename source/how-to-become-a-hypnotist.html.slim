@@ -1,8 +1,28 @@
 ---
 title: How To Become A Hypnotist
+video_quotes:
+  -
+    title: Angela Is Excited About Becoming A Hypnotist
+    src: 'http://www.youtube.com/embed/tkiP-Bqc-HI?rel=0'
+  -
+    title: Hear About Jason's Experience At Hypnosis Training Canada
+    src: 'http://www.youtube.com/embed/_IgODcOCm_8'
+quotes:
+  -
+    title: "Hypnosis Training Canada Student:  'I Feel Very Confident I Can Do This'"
+    quote: I'm really glad I came here.  I get to watch you with clients and practice on clients with you directly observing and giving me feedback.  It's very interactive.  I feel very confident that I can do this.  The way you set it up, I have to actually do it.  When you are doing it you're going to learn much faster.
+    cite: F.H.
+  -
+    title: Hypnosis Mentorship Student Learns Alot About The Business
+    quote: You jump into this pool of knowledge.  You are living in it.  There are a lot of things that I learned about the business side of having a practice.  Very helpful.  It takes away a lot of the guesswork.
+    cite: T.W.
+  -
+    title: "Become A Hypnotist:  'It's Amazing What You Can Do To Help People Grow'"
+    quote: I've really learned a lot.  It's been a great experience.  Watching everyone go through these transformations.   It's amazing what you can do to help people grow.
+    cite: A.M.
 ---
-section
-  div.two-thirds
+.main-content
+  section.become
     h1 How To Become A Hypnotist
 
     h2 Beware the pretenders, opportunists and used car hypnotists
@@ -14,15 +34,7 @@ section
     p Then there are the turnkey proprietary hypnosis systems.  They seduce people into believing that human change can be boiled down to a clever marketing phrase and a few scripts.
     p Many hypnotists keep their day jobs, see clients in their living rooms, and earn very limited incomes.  These hypnotists don't get the experience they need to become truly seasoned professionals. People don't see that hypnotism is a career that offers the opportunity to earn a great income while doing what you love.  To succeed as a professional hypnotist, business skills are a must.
 
-  div.third
-    h3 Angela Is Excited About Becoming A Hypnotist
-    div.video
-      <iframe width="350" height="197" src="http://www.youtube.com/embed/tkiP-Bqc-HI?rel=0" frameborder="0" allowfullscreen></iframe>
-    h3 Hypnosis Training Canada Student:  "I Feel Very Confident I Can Do This"
-    p "I'm really glad I came here.  I get to watch you with clients and practice on clients with you directly observing and giving me feedback.  It's very interactive.  I feel very confident that I can do this.  The way you set it up, I have to actually do it.  When you are doing it you're going to learn much faster."
-    p F.H.
-
-  div.two-thirds
+  section.hypcan
     h2 Introducing Hypnosis Training Canada
 
     p Having worked with thousands of clients, we know the incredible power that hypnosis has to change lives.  Our mission is to give people the hypnosis training they need to help themselves and others reach full potential and live more rewarding lives.
@@ -37,39 +49,23 @@ section
       li Fast-tracked success with an approach that has been developed over 30 years and with tens of thousands of real life clients
       li Business and entrepreneurial skills to build a successful career
 
-  div.third
-    h3 Hypnosis Mentorship Student Learns Alot About The Business
-    p "You jump into this pool of knowledge.  You are living in it.  There are a lot of things that I learned about the business side of having a practice.  Very helpful.  It takes away a lot of the guesswork."
-    p T.W.
-
-    h3 Become A Hypnotist:  "It's Amazing What You Can Do To Help People Grow"
-    p "I've really learned a lot.  It's been a great experience.  Watching everyone go through these transformations.   It's amazing what you can do to help people grow."
-    p A.M.
-
-
-
-  div.two-thirds
+  section.3d
     h2 Hypnosis Training in 3-D
 
     p Learning, divorced from reality, is also known as wasted potential.  Each student at Hypnosis Training Canada has different learning goals and outcomes.  We customize your experience to help you transform and integrate your new skills in a way that is meaningful and practical to you.
-
     p All of our students are expected to apply their learning to real life situations, and each student receives personal feedback on their performance.
-
     p We expect our students to approach their training with an open mind. Kind of like being an actor in a play. If you are learning to speak with a French accent, the fastest way to learn is by imitating someone who has a great French accent.
-
     p We pull back the curtain and reveal the artistry of hypnosis. Our students get hands-on, front row seats in real time hypnosis sessions. Performed by Master Hypnotists with actual clients at the <a href="www.burlingtonhypnosis.ca/contact-burlington-hypnosis.html">Burlington Hypnosis Centre</a>.  The opportunity to experience a busy hypnosis practice with everyday clients increases student learning.  It also helps those students who are building hypnosis careers to model how to run a successful hypnosis practice.
 
     h2 Hypnosis Training Canada is Expanding
-
     p We have been offering our custom hypnosis training programs to small groups of people that have been lucky enough to find us off the beaten path.  We know there is a dire need for more comprehensive and practical hypnosis training.  So, we are expanding our offerings to accommodate more students.  Here are upcoming <a href="hypnosistraining.html">training dates</a>.
-
     p If you are ready to begin your training now, Hypnosis Training Canada is accepting a limited number of people to begin their studies on a rolling admissions basis. Call 905-634-4777 to set up a free consultation. At this time we will see if our training is right for you.
 
     h2 Stay Tuned With Our Hypnosis Training Canada Newsletter
-
     p Sign up for free and get valuable information, stay up-to-date on important industry news and get our latest training schedule.
 
-  div.third
-    h3 Hear About Jason's Experience At Hypnosis Training Canada
-    div.video
-      <iframe width="350" height="197" src="http://www.youtube.com/embed/_IgODcOCm_8" frameborder="0" allowfullscreen></iframe>
+.side-panel
+  = partial 'video_quote', locals: current_page.data.video_quotes.first
+  - current_page.data.quotes.each do |quote|
+    = partial 'title_quote', locals: quote
+  = partial 'video_quote', locals: current_page.data.video_quotes.last

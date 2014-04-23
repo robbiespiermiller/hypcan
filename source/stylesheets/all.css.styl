@@ -21,16 +21,6 @@ header
     display inline-block
     color hypblue
 
-  .start-here
-    @extends .col-sm-3
-    button
-      @extends .btn-success
-      font-size 22px
-      margin-top 10px
-      a
-        color white
-        text-decoration none
-
   .phone
     @extends .col-sm-3
     display inline-block
@@ -56,6 +46,9 @@ main
     margin-top 40px
     &:first-of-type
       margin-top 0
+
+  &.whole
+    @extends .col-sm-12
 
 .side-panel
   @extends .col-sm-4
@@ -105,6 +98,14 @@ nav
     @extends .navbar-right
     li > a
       padding 14px 15px
+    li.start-here > a
+      border-radius 5px
+      margin-top 2px
+      margin-right 2px
+      padding 12px 8px
+      color white
+      background $brand-success
+      @extends .btn-success
 
   font-family Open Sans Condensed
   font-size 24px
@@ -152,9 +153,8 @@ form.email-form
   img
     width: 200px
     height: auto
-    //margin-top 24px
-    //margin-right 5px
-    //margin-bottom 24px
+    margin-right 25px
+    margin-bottom 8px
   font-size small
   float left
 
@@ -193,11 +193,11 @@ textarea
   height 6em
 
 body > footer
-    @extends .row
-    margin-top 30px
-    .disclaimers
-      border-top-left-radius 5px
-      border-top-right-radius 5px
-      background linear-gradient(top, lighten(hypblue, 80%), lighten(hypblue, 60%))
-      font-size small
-      padding 10px 20px
+  @extends .row
+  margin-top 30px
+  .disclaimers
+    border-top-left-radius 5px
+    border-top-right-radius 5px
+    background linear-gradient(top, lighten(hypblue, 80%), lighten(hypblue, 60%))
+    font-size small
+    padding 10px 20px
