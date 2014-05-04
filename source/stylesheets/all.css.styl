@@ -166,8 +166,10 @@ blockquote
   padding 5px
   margin 0
   p
-    &:before, &:after
+    &:before
       content: '"'
+    &:after
+      content: '"*'
 
 p.h-card
   .p-street-address, .p-postal-code, .p-country-name

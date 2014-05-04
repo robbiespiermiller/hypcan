@@ -3,17 +3,18 @@ title: Learn Hypnosis
 
 video_quotes:
   -
-    title: Angela Is Excited About Becoming A Hypnotist
-    src: 'http://www.youtube.com/embed/78V35KCN0eQ?rel=0'
+    title: Massage Therapist Heals Body And Mind
+    src: 'http://www.youtube.com/embed/yDTv437B_dQ?rel=0'
+
   -
-    title: Jason's Business Mentorship Experience At Hypnosis Training Canada
-    src: 'http://www.youtube.com/embed/dAwqTZykDUM?rel=0'
+    title: Life Changing Experience
+    src: 'http://www.youtube.com/embed/yQZxaRNMTOo?rel=0'
 
 quotes:
-  -
-    title: "I Feel Very Confident I Can Do This"
-    quote: I'm really glad I came here.  I get to watch you with clients and practice on clients with you directly observing and giving me feedback.  It's very interactive.  I feel very confident that I can do this.  The way you set it up, I have to actually do it.  When you are doing it you're going to learn much faster.
-    cite: F.H.
+   -
+    title: Hypnosis Mentorship Student Learns Alot About The Business
+    quote: "You jump into this pool of knowledge.  You are living in it.  There are a lot of things that I learned about the business side of having a practice.  Very helpful.  It takes away a lot of the guesswork."
+    cite: T.W.
 
 ---
 
@@ -27,7 +28,7 @@ quotes:
     p Trainer:  Robbie Spier Miller
     p Dates:  Friday July 18 - Monday July 21, 9 AM - 6 PM
     p Fee:  Early Bird Rate $777 By June 30th
-    p For hobbyists and budding professionals alike.  The Basic Hypnotism Training is your opportunity to learn how to hypnotize people with skill and confidence, and give a boost to your your communication & relationship skills.  This is a pre-requisite for the Certified Hypnotist Training.
+    p For hobbyists and budding professionals alike.  The Basic Hypnotism Training is your opportunity to learn how to hypnotize people with skill and confidence, and give a boost to your your communication and relationship skills.  This is a pre-requisite for the Certified Hypnotist Training.
 
     h2 Certified Hypnotist Training**
     p Trainer:  Robbie Spier Miller
@@ -35,6 +36,14 @@ quotes:
     p Dates:  Rolling admission.  Contact Hypnosis Training Canada to schedule your training hours.
     p Fee:  $1077 ($977 with Basic Hypnotism Training)
     p The Certified Hypnotist Training is a practicum for those who have completed their Basic Hypnotism Training.  Hypnosis for weight loss, stop smoking, stress management and pain management will be covered.  You will have the opportunity to observe real client sessions, get feedback on case studies, and demonstrate that you have mastered the knowledge and skills required to become a Certified Hypnotist.
+
+    h2 Life Odyssey 
+    p Trainers:  Scott McFall, Heather Merrill & Robbie Spier Miller
+    p Pre-requisite:  Completion of another Hypnosis Training Canada course, or participation in a custom hypnosis program at the Burlington Hypnosis Centre.  Others will be considered on a case-by-case basis, with entrance interview required.
+    p Dates:  Saturday September 27 - Tuesday September 30, 9 AM - 6 PM
+    p Fee:  Early Bird Rate $777 by August 30th
+    p Take this rare opportunity to transform your life and learn powerful skills from world reknowned hypnotist Scott McFall.  
+
 
     h2 Advanced Hypnotism Training Certificate**
     p Trainer:  Robbie Spier Miller
@@ -48,14 +57,7 @@ quotes:
     p Dates:  Friday November 21 - Monday November 24, 9 AM - 6 PM
     p Fee:  Early Bird Rate $777 By October 30th
     p Neuro-Linguistics is a very powerful way that we use language and our senses to communicate at the subconscious level.  The Neuro-Linguistics Practitioner Certificate is an introduction to these skills.  Neuro-Linguistics works hand-in-hand with hypnosis.  For people who want to improve their relationship and communication skills.  Upon the completion of course requirements, you will receive your certificate from the National Federation of Neuro-Linguistic Programming.
-
-    h2 Advanced Hypnosis & Neuro Linguistic Training
-    p Trainers:  Scott McFall, Heather Merrill & Robbie Spier Miller
-    p Pre-requisite:  Completion of another Hypnosis Training Canada course, or participation in a custom hypnosis program at the Burlington Hypnosis Centre.  Others will be considered on a case-by-case basis, with entrance interview required.
-    p Dates:  Saturday September 27 - Tuesday September 30, 9 AM - 6 PM
-    p Fee:  Early Bird Rate $777 by August 30th
-    p Take this rare opportunity to transform your life and learn powerful skills from world reknowned hypnotist Scott McFall.  
-
+    
     h2 Business Mentorship
 
     p Whether you want to build a hypnosis business, or increase your success as an entrepreneur or health professional, our business mentorship is the key to maximizing your success.
@@ -78,8 +80,12 @@ quotes:
     p Hypnosis Training Canada, Robbie Spier Miller and the Master Hypnotist Society reserve the right to refuse any student based upon scheduling and availability of Robbie Spier Miller as trainer.
 
 .side-panel
+    = partial 'video_quote', locals: current_page.data.video_quotes.last
+    = partial 'contact_us'    
     section.training-img
         img.img-rounded src="images/neuro-linguistic-training.jpg"
-    = partial 'contact_us'
     = partial 'title_quote', locals: current_page.data.quotes.first
+    = partial 'video_quote', locals: current_page.data.video_quotes.first
+    = partial 'newsletter'
+
 
