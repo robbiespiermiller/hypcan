@@ -17,22 +17,17 @@ header
   @extends .row
   h1
     @extends .col-sm-6
-    font-family Open Sans Condensed
-    display inline-block
+    font-family 'Comfortaa', serif
     color hypblue
 
   .phone
-    @extends .col-sm-3
-    display inline-block
-    float right
-    word-break break-word
-    word-wrap break-word
+    @extends .col-sm-6
     text-align right
     font-size 22px
     font-weight 500
     min-width 270px
-    width 20%
-    margin-top 10px
+    margin-top 27px
+    font-family 'Merriweather', serif
 
 main
   @extends .row
@@ -40,7 +35,6 @@ main
 .main-content
   @extends .col-sm-8
   h2
-    //font-family Merriweather Sans
     font-size 24px
   section
     margin-top 40px
@@ -54,14 +48,18 @@ main
   @extends .col-sm-4
   background #f8f8f8
   h1
-    //font-family Merriweather Sans
     font-size 26px
   section
-    margin-top 40px
+    margin-top 50px
+    margin-bottom 50px
     &:first-of-type
-      margin-top 0
-    &.contact-us, &.training-img
       margin-top 20px
+    &:last-of-type
+      margin-bottom 20px
+
+.training-3d form input.form-control
+  width: 100%
+  margin-left -15px
 
 .tips
   @extends .row
@@ -72,7 +70,6 @@ main
     h3
       margin-top 0
       font-size 28px
-    //font-family 'Helvetica Neue', Helvetica, Arial, sans-serif
 
 input[type='submit'], button
   @extends .btn
@@ -109,8 +106,8 @@ nav
       background $brand-success
       @extends .btn-success
 
-  font-family Open Sans Condensed
-  font-size 24px
+  font-family 'Merriweather'
+  font-size 18px
   color rgb(27, 48, 159)
 
 .scoop
@@ -134,7 +131,7 @@ nav
     @extends .col-sm-8
     h1
       margin-top 0
-  
+
 .contact
   @extends .row
   .text

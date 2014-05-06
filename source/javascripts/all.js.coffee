@@ -8,4 +8,4 @@ select_menu = ->
     link = el.querySelector('a')
     link.getAttribute('href') is path
   selected_menu[0].classList.add 'active' if selected_menu.length
-select_menu()
+#select_menu()

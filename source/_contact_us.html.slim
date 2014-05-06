@@ -5,14 +5,15 @@ section.contact-us
       | Or call us at 905-634-4777 or 800-971-5774
     .img
       img.img-circle src="images/robbie-spier-miller-2.jpg"
-  form.email-form
+  form.email-form action='http://bh-contact-us.herokuapp.com/contact_us' method='POST'
+    input type='hidden' name='contact[human]'
     .form-group
       label Email
-      input type='email'
+      input type='email' name='contact[email]'
     .form-group
       label Phone
-      input type='phone'
+      input type='phone' name='contact[phone]'
     .form-group
       label How can we help you?
-      textarea
+      textarea name='contact[message]'
     input type='submit'
