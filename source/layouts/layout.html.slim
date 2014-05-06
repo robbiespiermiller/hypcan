@@ -2,28 +2,28 @@ html
   head
     meta charset="utf-8"
     meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"
-    link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"
-    link href="http://fonts.googleapis.com/css?family=Open+Sans Condensed:300,400|Lato:400,400|Ubuntu+Condensed:400|Merriweather+Sans:400" rel="stylesheet"
-    title= current_page.data.title || "The Middleman"
+    link href='http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css' rel='stylesheet'
+    link href='http://fonts.googleapis.com/css?family=Comfortaa|Merriweather:400,300' rel='stylesheet'
+    script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"
+    title= current_page.data.title || "Hypnosis Training Canada"
     = stylesheet_link_tag "all"
   body
     header
       h1 Hypnosis Training Canada
-      .phone Call Now 905-634-4777 or 800-971-5774
+      .phone Call Now 1-800-971-5774
     main
       nav role='navigation'
         ul.navbar-nav
+          =nav_link_to 'Home', 'index.html'
           li
-            a href="/index.html" Home
+            =link_to 'Become A Hypnotist', 'how-to-become-a-hypnotist.html'
           li
-            a href="/how-to-become-a-hypnotist.html" Become A Hypnotist
+            =link_to 'Upcoming Courses', 'learn-hypnosis.html'
           li
-            a href="/learn-hypnosis.html" Upcoming Courses
-          li
-            a href="/you-and-hypnosis-training-canada.html" Inside Story
+            =link_to 'Inside Story', 'you-and-hypnosis-training-canada.html'
         ul.navbar-nav
           li.start-here
-            a href="/how-to-become-a-hypnotist.html" Start Here
+            =link_to 'Start Here', 'how-to-become-a-hypnotist.html'
       = yield
 
     footer
@@ -48,19 +48,19 @@ html
                 |   LinkedIn
           ul.navbar-nav
             li
-              a href="/contact-hypnosis-training-canada.html" 
-                i.fa.fa-phone 
+              = nav_link_to 'contact-hypnosis-training-canada.html' do
+                i.fa.fa-phone
                 |   Contact Us
             li
-              a href="/you-and-hypnosis-training-canada.html" 
+              = link_to 'you-and-hypnosis-training-canada.html' do
                 i.fa.fa-user
                 |   About Us
             li
-              a href="/site-map.html" 
+              = link_to 'site-map.html' do
                 i.fa.fa-sitemap
                 |   Site Map
             li
-              a href="/privacy-policy.html" 
+              = link_to 'privacy-policy.html' do
                 i.fa.fa-info-circle
                 |   Privacy Policy
 
