@@ -5,6 +5,12 @@ quotes:
     title: Hypnosis Training For Results
     quote: The training permitted me to develop the personal confidence and capabilities to help clients in a very proficient manner. As a second degree black belt to effect changes in my students it took 6 months. Now I can get the same results in just a few weeks.
     cite: W.Y.
+    
+video_quote_large:
+  -
+    title: Angela Is Excited About Becoming A Hypnotist
+    src: 'http://www.youtube.com/embed/78V35KCN0eQ?rel=0'
+
 ---
 .main-content
   section
@@ -14,19 +20,8 @@ quotes:
     p Whether you want to help yourself, your family and friends, or build an exciting career as a hypnotist, Hypnosis Training Canada gives you the opportunity to succeed.
 
   section.video
-    div.video
+    = partial "_video_quote_large", locals: current_page.data.video_quote_large.first
 
-  section.skills
-    .tips
-      .col-sm-2
-        img.img-rounded src="images/Bigstock_4874047-target.jpg"
-      .col-sm-10
-        h3 7 Tips To Build Your Hypnotic Skills
-        form.form-inline
-            .form-group
-              label.sr-only Email Address
-              input.form-control placeholder='email address'
-            button type='submit' Get Your FREE Report Now
 
   section.what-is
     .what-is
