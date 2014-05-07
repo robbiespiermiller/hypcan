@@ -1,11 +1,14 @@
 # require_tree .
+#= require bootstrap.min
 
-select_menu = ->
-  path = window.location.pathname
-  path = '/index.html' if path is '/'
-  menus = document.querySelectorAll('nav > ul > li')
-  selected_menu = Array.prototype.filter.call menus, (el)->
-    link = el.querySelector('a')
-    link.getAttribute('href') is path
-  selected_menu[0].classList.add 'active' if selected_menu.length
-#select_menu()
+form_submit = (selector)->
+  $(".#{selector} form").on 'submit', (e)->
+    e.preventDefault()
+    $this = $(this)
+    $.post($this.attr('action'), $this.serialize()).done ->
+      $(".#{selector} .alert-success").clone().appendTo(".#{selector}").show()
+    .fail ->
+      $(".#{selector} .alert-danger").clone().appendTo(".#{selector}").show()
+
+form_submit('contact-us')
+form_submit('scoop')

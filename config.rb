@@ -71,10 +71,9 @@ end
 
 helpers do
   def nav_link_to(*args, &block)
-    args
     link = block ? args.first : args[1]
-    selected = (current_resource.path == link)
-    p klass = selected ? 'active' : ''
-    content_tag :li, link_to(*args, &block), class: klass
+    options = (current_resource.path == link) ? {class: 'active'} : {}
+    link_html = link_to(*args, &block)
+    content_tag :li, link_html, options
   end
 end

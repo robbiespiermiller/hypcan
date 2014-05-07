@@ -15,12 +15,9 @@ html
       nav role='navigation'
         ul.navbar-nav
           =nav_link_to 'Home', 'index.html'
-          li
-            =link_to 'Become A Hypnotist', 'how-to-become-a-hypnotist.html'
-          li
-            =link_to 'Upcoming Courses', 'learn-hypnosis.html'
-          li
-            =link_to 'Inside Story', 'you-and-hypnosis-training-canada.html'
+          =nav_link_to 'Become A Hypnotist', 'how-to-become-a-hypnotist.html'
+          =nav_link_to 'Upcoming Courses', 'learn-hypnosis.html'
+          =nav_link_to 'Inside Story', 'you-and-hypnosis-training-canada.html'
         ul.navbar-nav
           li.start-here
             =link_to 'Start Here', 'how-to-become-a-hypnotist.html'
@@ -48,7 +45,7 @@ html
                 |   LinkedIn
           ul.navbar-nav
             li
-              = nav_link_to 'contact-hypnosis-training-canada.html' do
+              = link_to 'contact-hypnosis-training-canada.html' do
                 i.fa.fa-phone
                 |   Contact Us
             li
