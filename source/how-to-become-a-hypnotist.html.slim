@@ -1,5 +1,9 @@
 ---
 title: How To Become A Hypnotist
+seo_title: "How To Become A Hypnotist"
+seo_description: "Your guide to finding high quality hypnosis training.  Hypnosis Training Canada offers hands-on training and mentorship for personal and professional success."
+seo_keywords: "hypnosis training, hypnosis training course, professional hypnosis training, mentorship"
+
 video_quotes:
   -
     title: Angela Is Excited About Becoming A Hypnotist
@@ -13,10 +17,7 @@ quotes:
     title: Quality Hypnosis Training Builds Confidence And Skill
     quote: I'm really glad I came here.  I get to watch you with clients and practice on clients with you directly observing and giving me feedback.  It's very interactive.  I feel very confident that I can do this.  The way you set it up, I have to actually do it.  When you are doing it you're going to learn much faster.
     cite: F.H.
-  -
-    title: Hypnosis Mentorship Student Learns Alot About The Business
-    quote: You jump into this pool of knowledge.  You are living in it.  There are a lot of things that I learned about the business side of having a practice.  Very helpful.  It takes away a lot of the guesswork.
-    cite: T.W.
+  
   -
     title: "Become A Hypnotist:  'It's Amazing What You Can Do To Help People Grow'"
     quote: I've really learned a lot.  It's been a great experience.  Watching everyone go through these transformations.   It's amazing what you can do to help people grow.
@@ -64,11 +65,7 @@ quotes:
 
     h2 Stay Tuned With Our Hypnosis Training Canada Newsletter
     p Sign up for free and get valuable information, stay up-to-date on important industry news and get our latest training schedule.
-    form.form-inline.well.well-sm
-      .form-group.col-sm-7
-        label.sr-only Email Address
-        input.form-control placeholder='email address'
-      button type='submit' Newsletter Sign Up
+    = partial "newsletter_form", locals: {button_title: "Newsletter Sign Up"}
 
 
 .side-panel
