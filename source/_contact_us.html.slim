@@ -10,21 +10,21 @@ section.contact-us
     ' or email us directly at
     strong> support at(@) burlingtonhypnosis dot(.) ca
     ' or try again later.
-  .contact
-    .text
+  .contact.row
+    .text.col-sm-9
       h1 Have Us Contact You
       | Or call us at 905-634-4777 or 800-971-5774
-    .img
+    .img.col-sm-3
       img.img-circle src="images/robbie-spier-miller-2.jpg" alt="Robbie Spier Miller"
   form.email-form action='http://bh-contact-us.herokuapp.com/contact_us' method='POST'
-    input type='hidden' name='contact[human]'
+    input.form-control type='hidden' name='contact[human]'
     .form-group
       label Email
-      input type='email' name='contact[email]'
+      input.form-control type='email' name='contact[email]'
     .form-group
       label Phone
-      input type='phone' name='contact[phone]'
+      input.form-control type='phone' name='contact[phone]'
     .form-group
       label How can we help you?
-      textarea name='contact[message]'
-    input type='submit'
+      textarea.form-control name='contact[message]'
+    input.btn.btn-primary type='submit'

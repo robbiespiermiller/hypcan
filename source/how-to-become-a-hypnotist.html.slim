@@ -17,13 +17,13 @@ quotes:
     title: Quality Hypnosis Training Builds Confidence And Skill
     quote: I'm really glad I came here.  I get to watch you with clients and practice on clients with you directly observing and giving me feedback.  It's very interactive.  I feel very confident that I can do this.  The way you set it up, I have to actually do it.  When you are doing it you're going to learn much faster.
     cite: F.H.
-  
+
   -
     title: "Become A Hypnotist:  'It's Amazing What You Can Do To Help People Grow'"
     quote: I've really learned a lot.  It's been a great experience.  Watching everyone go through these transformations.   It's amazing what you can do to help people grow.
     cite: A.M.
 ---
-.main-content
+.main-content.col-sm-8
   section.become
     h1 How To Become A Hypnotist
 
@@ -68,10 +68,9 @@ quotes:
     = partial "newsletter_form", locals: {button_title: "Newsletter Sign Up"}
 
 
-.side-panel
+.side-panel.col-sm-4
   = partial 'video_quote', locals: current_page.data.video_quotes.first
   = partial 'upcoming_courses'
   = partial 'title_quote', locals: current_page.data.quotes.first
   = partial 'video_quote', locals: current_page.data.video_quotes.last
   = partial 'title_quote', locals: current_page.data.quotes.last
-

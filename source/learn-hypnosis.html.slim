@@ -18,10 +18,9 @@ quotes:
     title: Hypnosis Mentorship Student Learns Alot About The Business
     quote: "You jump into this pool of knowledge.  You are living in it.  There are a lot of things that I learned about the business side of having a practice.  Very helpful.  It takes away a lot of the guesswork."
     cite: T.W.
-
 ---
 
-.main-content
+.main-content.col-sm-8
   section.upcoming
     h1 Learn Hypnosis:  Upcoming Courses
 
@@ -54,19 +53,19 @@ quotes:
     p Fee:  Early Bird Rate $777 By October 30th
     p Neuro-Linguistics is a rapid change technology that uses language and our senses to communicate and change at the subconscious level.  Improve your relationships and communication, build self-mastery, and help yourself and others have more personal and professional success. Upon the completion of course requirements, you will receive your NLP Practitioner certificate from the National Federation of Neuro-Linguistic Programming (NFNLP).
     p <a href="nlp-practitioner.html">NLP Practitioner Curriculum</a>
-    
+
     h2 Neuro-Linguistics (NLP) Master Practitioner Certificate**
     p Trainer:  Robbie Spier Miller
-    p Pre-requisite:  Neuro-Linguistics Practitioner Certificate.  
+    p Pre-requisite:  Neuro-Linguistics Practitioner Certificate.
     p Dates:  TBA
     p For Neuro-Linguistics Practitioners who want to build their fluency in neuro-linguistics.  Hone your skills as a master communicator and change worker.  Upon the completion of course requirements, you will receive your NLP Master Practitioner certificate from the National Federation of Neuro-Linguistic Programming (NFNLP).
- 
+
 
     h2 Business Mentorship
 
     p Whether you want to build a hypnosis business, or increase your success as an entrepreneur or health professional, our business mentorship is the key to maximizing your success.
 
-    p Smart business people know that there is no need to reinvent the wheel.  The mentorship program is your opportunity to get the advantage.  You gain access to the wisdom and experience gleaned from the success of multiple businesses over a period of 30 years.  
+    p Smart business people know that there is no need to reinvent the wheel.  The mentorship program is your opportunity to get the advantage.  You gain access to the wisdom and experience gleaned from the success of multiple businesses over a period of 30 years.
 
     h3 The mentorship program:
     ul
@@ -84,12 +83,10 @@ quotes:
     p Hypnosis Training Canada, Robbie Spier Miller and the Master Hypnotist Society reserve the right to refuse any student based upon scheduling and availability of Robbie Spier Miller as trainer.
     p All students must be at least 18 years of age, and have completed secondary education or equivalent.
 
-.side-panel
+.side-panel.col-sm-4
     = partial 'video_quote', locals: current_page.data.video_quotes.last
-    = partial 'contact_us'    
+    = partial 'contact_us'
     section.training-img
         img.img-rounded src="images/neuro-linguistic-training.jpg" alt="NLP Practitioner Demo"
     = partial 'title_quote', locals: current_page.data.quotes.first
     = partial 'video_quote', locals: current_page.data.video_quotes.first
-
-

@@ -1,27 +1,17 @@
-@import 'overrides'
-@import 'nib/index'
-@import 'bootstrap/bootstrap'
-//= require normalize
-
+//=require bootstrap.min
 hypblue = #348AF8
 backgroundblue = #73AED8
-
-body
-  @extends .container
-  /* background linear-gradient(top, #ccc, #fff) */
+brand-success = #5cb85c
 
 h1
   font-size 34px
 
 header
-  @extends .row
   h1
-    @extends .col-sm-6
     font-family 'Comfortaa', serif
     color hypblue
 
   .phone
-    @extends .col-sm-6
     text-align right
     font-size 22px
     font-weight 500
@@ -29,11 +19,7 @@ header
     margin-top 27px
     font-family 'Merriweather', serif
 
-main
-  @extends .row
-
 .main-content
-  @extends .col-sm-8
   h2
     font-size 24px
   section
@@ -45,13 +31,7 @@ main
       width 350*2px
       height 197*2px
 
-
-
-  &.whole
-    @extends .col-sm-12
-
 .side-panel
-  @extends .col-sm-4
   background #f8f8f8
   h1
     font-size 26px
@@ -67,59 +47,32 @@ main
       width 350px
       height 197px
 
-
 .training-3d form input.form-control
   width: 100%
   margin-left -15px
 
-.tips
-  @extends .row
-  img
-    width 110px
-    height auto
-  .col-sm-10
-    h3
-      margin-top 0
-      font-size 28px
-
-input[type='submit'], button
-  @extends .btn
-
-input[type='submit'], button[type='submit']
-  @extends .btn-primary
-  //margin-left 5px
-
-button.green
-  @extends .btn-success
-  font-size 24px
-  padding 12px 24px
-
 nav
   width 100%
-  @extends .navbar
-  @extends .navbar-default
-  ul:first-of-type
-    @extends .nav
-    @extends .navbar-left
-    li > a
-      padding 14px 15px
+  ul li > a
+    padding 14px 15px
   ul:nth-of-type(2)
-    @extends .nav
-    @extends .navbar-right
-    li > a
-      padding 14px 15px
-    li.start-here > a
-      border-radius 5px
-      margin-top 2px
-      margin-right 2px
-      padding 12px 8px
-      color white
-      background $brand-success
-      @extends .btn-success
+    &.navbar-nav.navbar-right
+      margin-right 0
 
   font-family 'Merriweather'
   font-size 18px
   color rgb(27, 48, 159)
+
+.navbar-nav li.start-here > a
+  border-radius 5px
+  margin-top 3px
+  margin-right 2px
+  padding 12px 8px
+  color white
+  background brand-success
+  &:hover
+    color white
+    background darken(brand-success, 10%)
 
 .scoop
   img
@@ -129,17 +82,13 @@ nav
       width 100%
 
 .location
-  @extends .row
-
   .location-img
-    @extends .col-sm-4
     font-size small
     img
       margin-top 10px
       width 100%
       height auto
   .location-text
-    @extends .col-sm-8
     h1
       margin-top 0
 
@@ -147,13 +96,10 @@ nav
   display none
 
 .contact
-  @extends .row
   .text
-    @extends .col-sm-9
     h1
       margin-top 0
   .img
-    @extends .col-sm-3
     img
       width 65px
       height auto
@@ -195,21 +141,13 @@ p.h-card
     content: ''
     display: block
 
-p.map
-  @extends .text-center
-  a
-    display: block
-    @extends .text-center
-
-input
-  @extends .form-control
+p.map a
+  display: block
 
 textarea
-  @extends .form-control
   height 6em
 
 body > footer
-  @extends .row
   margin-top 30px
   .disclaimers
     border-top-left-radius 5px
