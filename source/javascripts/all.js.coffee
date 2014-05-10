@@ -1,4 +1,3 @@
-# require_tree .
 #= require bootstrap.min
 
 form_submit = (selector)->
@@ -7,6 +6,7 @@ form_submit = (selector)->
     $this = $(this)
     $.post($this.attr('action'), $this.serialize()).done ->
       $(".#{selector} .alert-success").clone().appendTo(".#{selector}").show()
+      $this.find('.form-control').val('')
     .fail ->
       $(".#{selector} .alert-danger").clone().appendTo(".#{selector}").show()
 
