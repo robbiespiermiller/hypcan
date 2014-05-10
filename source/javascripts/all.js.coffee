@@ -1,4 +1,5 @@
 #= require bootstrap.min
+#= require googleanalytics.js.coffee
 
 form_submit = (selector)->
   $(".#{selector} form").on 'submit', (e)->
