@@ -2,12 +2,12 @@
 title: Hypnosis Training Canada
 seo_title: "Hypnosis Training Canada"
 seo_description: "World class hypnosis training for personal & professional success in the Greater Toronto Area.  Call for your free consultation 905-634-4777."
-seo_keywords: "hypnosis training, hypnosis toronto, hypnotherapy training, ontario hypnosis, hypnosis london ontario"
+seo_keywords: "hypnosis training, hypnotherapy certification, hypnosis toronto, hypnotherapy training, ontario hypnosis, master hypnotist society"
 
 quotes:
   -
     title: Hypnosis Training For Results
-    quote: The training permitted me to develop the personal confidence and capabilities to help clients in a very proficient manner. As a second degree black belt to effect changes in my students it took 6 months. Now I can get the same results in just a few weeks.
+    quote: The training permitted me to develop the personal confidence and capabilities to help clients in a very proficient manner.
     cite: W.Y.
   -
     title: Hypnosis Mentorship Student Learns Alot About The Business
@@ -16,19 +16,34 @@ quotes:
 
 video_quote_large:
   -
-    title: Angela Is Excited About Becoming A Hypnotist
-    src: 'http://www.youtube.com/embed/78V35KCN0eQ?rel=0'
+    title: Welcome To Hypnosis Training Canada
+    src: 'http://www.youtube.com/embed/jpfx_WI5Kdo?rel=0'
+                      
+  -
+    title: I Would Do It Again & Again & Again
+    src: 'http://www.youtube.com/embed/qs78DJdrjAA?rel=0'
+
 
 ---
-.main-content.col-sm-8
-  section
-    h1 Now, Finally Hypnosis Training You Can Trust
-    p Are you intrigued by hypnosis?  By the possibilities of our most treasured resource - the human mind?
-    p If you want to know the truth about hypnosis and hypnosis training, <a href="how-to-become-a-hypnotist.html">keep reading...</a>
-    p Whether you want to help yourself, your family and friends, or build an exciting career as a hypnotist, Hypnosis Training Canada gives you the opportunity to succeed.
-
+.main-content.col-sm-8   
   section.video
     = partial "_video_quote", locals: current_page.data.video_quote_large.first
+
+  section
+    h1 Now, Finally, Full Spectrum Hypnosis Training For Your Success
+    p Are you intrigued by hypnosis?  By the possibilities of our most treasured resource - the human mind?
+    p <a href="how-to-become-a-hypnotist.html">Keep reading...</a>
+    p Whether you want to help yourself, your family and friends, or build an exciting career as a hypnotist, Master Hypnotist Society training at Hypnosis Training Canada gives you the opportunity to succeed.
+    p <a href="how-to-become-a-hypnotist.html">Enter the high paying field</a> of hypnotism.
+
+  section.well
+    img.col-sm-6.img-mhs-master-hypnotist-society src="images/mhs-master-hypnotist-society.jpg" alt="Master Hypnotist Society"  
+    p Our mission is to raise the bar on the practice of hypnotism, and to help as many people as possible with the power of hypnosis.
+    p Now, we at the Master Hypnotist Society are sharing the secrets of our success. Here is your opportunity to build a hypnosis career you can be truly proud of.
+    p <a href="how-to-become-a-hypnotist.html">Learn More</a>
+
+  section.video
+    = partial "_video_quote", locals: current_page.data.video_quote_large.last
 
 
   section.what-is
@@ -47,7 +62,7 @@ video_quote_large:
       p Whether you want to become a hypnotist or a hypnotherapist, Hypnosis Training Canada gives you the opportunity to learn the art of hypnosis so you can help your clients get results.
       p
         a href="how-to-become-a-hypnotist.html" Learn more
-        |  about building your career with Hypnosis Training Canada.
+        |  about building your career with Hypnosis Training Canada and the Master Hypnotist Society.
 
   section.location-section
     .location.row
@@ -61,6 +76,7 @@ video_quote_large:
           a href="contact-hypnosis-training-canada.html" Location & Driving Directions
 
 .side-panel.col-sm-4
+  = partial 'legislative_bootcamp'
   = partial 'upcoming_courses'
   = partial 'contact_us'
   = partial 'title_quote', locals: current_page.data.quotes.first
