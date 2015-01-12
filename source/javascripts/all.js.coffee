@@ -12,3 +12,4 @@ form_submit = (selector)->
       $(".#{selector} .alert-danger").clone().appendTo(".#{selector}").show()
 
 form_submit('contact-us')
+$('[data-toggle="popover"]').popover()
