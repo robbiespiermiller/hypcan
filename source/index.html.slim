@@ -18,15 +18,14 @@ video_quote_large:
   -
     title: Welcome To Hypnosis Training Canada
     src: 'http://www.youtube.com/embed/jpfx_WI5Kdo?rel=0'
-                      
+
   -
     title: I Would Do It Again & Again & Again
     src: 'http://www.youtube.com/embed/qs78DJdrjAA?rel=0'
 
-
 ---
-.main-content.col-sm-8   
-  section.video
+.main-content.col-sm-8
+  section
     = partial "_video_quote", locals: current_page.data.video_quote_large.first
 
   section
@@ -37,12 +36,12 @@ video_quote_large:
     p <a href="how-to-become-a-hypnotist.html">Enter the high paying field</a> of hypnotism.
 
   section.well
-    img.col-sm-6.img-mhs-master-hypnotist-society src="images/mhs-master-hypnotist-society.jpg" alt="Master Hypnotist Society"  
+    img.col-sm-6.img-mhs-master-hypnotist-society.img-responsive src="images/mhs-master-hypnotist-society.png" alt="Master Hypnotist Society"
     p Our mission is to raise the bar on the practice of hypnotism, and to help as many people as possible with the power of hypnosis.
     p Now, we at the Master Hypnotist Society are sharing the secrets of our success. Here is your opportunity to build a hypnosis career you can be truly proud of.
     p <a href="how-to-become-a-hypnotist.html">Learn More</a>
 
-  section.video
+  section
     = partial "_video_quote", locals: current_page.data.video_quote_large.last
 
 
@@ -67,7 +66,7 @@ video_quote_large:
   section.location-section
     .location.row
       .location-img.col-sm-4
-        img.img-rounded src="images/Bigstock_40245928-Toronto-Ontario-Skyline.jpg" alt="Toronto Skyline, Ontario, Canada"
+        img.img-rounded.img-responsive src="images/Bigstock_40245928-Toronto-Ontario-Skyline.jpg" alt="Toronto Skyline, Ontario, Canada"
         figcaption Toronto Skyline, Ontario, Canada
       .location-text.col-sm-8
         h1 Hypnosis Training Toronto Ontario
